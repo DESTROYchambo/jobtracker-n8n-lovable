@@ -2,6 +2,8 @@
 
 Сучасний мінімалістичний дашборд, розроблений для відстеження заявок на роботу, співбесід та оферів. Створений для оптимізації процесу пошуку роботи з акцентом на UX (користувацький досвід) та надійність збереження даних.
 
+Посилання на застосунок: https://jobtrackern8n.lovable.app
+
 ## 🛠 Технічний стек
 
 * **Frontend:** React (на базі Lovable.dev), Tailwind CSS, TanStack Query.
@@ -17,16 +19,43 @@
 * **Оптимістичний UI:** Інтерфейс оновлюється миттєво після дії користувача (видалення/редагування), не чекаючи відповіді сервера, що забезпечує миттєву реакцію застосунку.
 * **Збереження стану:** Авторизація користувача та дані залишаються узгодженими після перезавантаження сторінки (синхронізація localStorage + Postgres).
 
-## ⚙️ Технічні особливості та вирішені виклики
+## Інструкція з використання
 
-### 1. Обробка "Race Conditions" (Стану гонитви)
-Реалізовано логіку для сценаріїв, коли UI запитує дані швидше, ніж база даних встигає обробити видалення. Використання **оптимістичних оновлень** та ручне керування кешем у React Query запобігає повторній появі "фантомних записів" після видалення.
+* Відкрити веб-застосунок.
+  
+* Ввести логін та пароль адміна (admin admin).
+  
+  <img width="408" height="455" alt="image" src="https://github.com/user-attachments/assets/ce4a63c3-5e98-4f19-885e-6c659e2a9161" />
 
-### 2. Захисний парсинг даних (Defensive Parsing)
-Додаток містить суворі шари валідації для обробки крайніх випадків (edge cases) від API, таких як:
-* Пусті тіла JSON (HTTP 200, але без контенту).
-* Подвійно серіалізовані JSON відповіді (Double-stringified).
-* Null або пошкоджені рядки дат.
+* Відкриється панель адміна де знаходяться всі додані записи роботи. Щоб додати новий запис потрібно натиснути кнопку Add Application у правій частині застосунку.
+
+  <img width="1330" height="465" alt="Знімок екрана 2026-02-10 193123" src="https://github.com/user-attachments/assets/2dc4e268-4f7e-405d-b8d7-f584452776ed" />
+
+* Вписуємо дані та додаємо запис.
+
+   <img width="549" height="649" alt="image" src="https://github.com/user-attachments/assets/8007aa85-c6b9-47d5-b165-fd066fa4b78e" />
+
+   <img width="879" height="220" alt="image" src="https://github.com/user-attachments/assets/0185fa8f-a2cc-4c03-b5cb-ce9400742228" />
+
+* Щоб змінити дані, потрібно навестись на три точки у правому верхньому кутку запису. Та вибираємо Edit, змінюємо бажані дані.
+
+   <img width="453" height="211" alt="Знімок екрана 2026-02-10 193717" src="https://github.com/user-attachments/assets/164686be-5b77-489b-8a5c-26fc3865ebbf" />
+
+   <img width="429" height="195" alt="image" src="https://github.com/user-attachments/assets/1acc4883-b1b5-483a-826b-77b52c43b9ca" />
+
+  <img width="436" height="199" alt="image" src="https://github.com/user-attachments/assets/fdc11091-5a14-4fa4-affb-aadf7366c688" />
+  
+* Щоб видалити запис, потрібно навестись на три точки у правому верхньому кутку запису та натиснути Delete. Після цього запис видалиться.
+
+   <img width="590" height="281" alt="image" src="https://github.com/user-attachments/assets/779be886-d5c7-40ca-a209-4a736d12798d" />
+   
+* У застосунку є можливість пошуку записів за компанією або посадою, а також фільтр запису за статусом.
+
+   <img width="1132" height="262" alt="image" src="https://github.com/user-attachments/assets/0be90546-9daf-4bf0-af38-1388dbf739e8" />
+
+   <img width="1143" height="290" alt="image" src="https://github.com/user-attachments/assets/f91b8f46-1feb-4975-8810-e1ce75f01c60" />
+
+   <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/ba25427e-8c56-4e28-9b18-b91980b43dd8" />
 
 ---
 
