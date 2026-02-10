@@ -1,2 +1,2 @@
-# jobtracker-n8n-lovable
+# JobTracker n8n+lovable
 Репозиторій для власного проєкту веб-застосунку
