@@ -57,6 +57,10 @@
 
    <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/ba25427e-8c56-4e28-9b18-b91980b43dd8" />
 
+* Записи у базі даних
+
+  <img width="811" height="183" alt="image" src="https://github.com/user-attachments/assets/7c97e763-698c-4322-8db4-2ea0da3bc619" />
+
 ---
 
 ## 🔮 Плани на майбутнє (Апгрейд до ATS платформи)
