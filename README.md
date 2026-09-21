@@ -1,43 +1,43 @@
 # 🚀 JobTracker n8n+lovable
 
-Сучасний мінімалістичний дашборд, розроблений для відстеження заявок на роботу, співбесід та оферів. Створений для оптимізації процесу пошуку роботи з акцентом на UX (користувацький досвід) та надійність збереження даних.
+A modern minimalist dashboard designed for tracking job applications, interviews, and offers. Created to optimize the job search process with a focus on UX (user experience) and reliable data storage.
 
-Посилання на застосунок: https://jobtrackern8n.lovable.app
+Application link: https://jobtrackern8n.lovable.app
 
-## 🛠 Технічний стек
+## 🛠 Technical Stack
 
-* **Frontend:** React (на базі Lovable.dev), Tailwind CSS, TanStack Query.
+* **Frontend:** React (powered by Lovable.dev), Tailwind CSS, TanStack Query.
 * **Backend:** n8n.
 * **Database:** PostgreSQL.
-* **Архітектура:** Клієнт-серверна модель з використанням REST API через вебхуки.
+* **Архітектура:** Client-server model using REST API via webhooks.
 
-## ✨ Ключові функції
+## ✨ Key Features
 
-* **Перегляд дашборда:** Канбан-дошка або сітка заявок з кольоровим кодуванням статусів (Applied, Interview, Offer, Rejected).
-* **CRUD у реальному часі:** Миттєве створення, перегляд, оновлення та видалення записів про вакансії.
-* **Розумна обробка дат:** Відображення відносного часу (наприклад, "Подано 2 дні тому") з надійною обробкою помилок для пустих або некоректних дат.
-* **Оптимістичний UI:** Інтерфейс оновлюється миттєво після дії користувача (видалення/редагування), не чекаючи відповіді сервера, що забезпечує миттєву реакцію застосунку.
-* **Збереження стану:** Авторизація користувача та дані залишаються узгодженими після перезавантаження сторінки (синхронізація localStorage + Postgres).
+* **Dashboard view**: Kanban board or application grid with color-coded statuses (Applied, Interview, Offer, Rejected).
+* **Real-time CRUD**: Instant creation, viewing, updating, and deletion of job records.
+* **Smart date handling**: Display of relative time (e.g., "Applied 2 days ago") with reliable error handling for empty or invalid dates.
+* **Optimistic UI**: The interface updates instantly after user actions (deletion/editing) without waiting for a server response, providing an immediate application reaction.
+* **State persistence**: User authorization and data remain consistent after page reloads (localStorage + Postgres synchronization).
 
-## Інструкція з використання
+## Usage Instructions
 
-* Відкрити веб-застосунок.
+* Open the web application.
   
-* Ввести логін та пароль адміна (admin admin).
+* Enter the admin login and password (admin admin).
   
   <img width="408" height="455" alt="image" src="https://github.com/user-attachments/assets/ce4a63c3-5e98-4f19-885e-6c659e2a9161" />
 
-* Відкриється панель адміна де знаходяться всі додані записи роботи. Щоб додати новий запис потрібно натиснути кнопку Add Application у правій частині застосунку.
-
+* The admin panel will open, displaying all added job records. To add a new record, click the Add Application button on the right side of the application.
+  
   <img width="1330" height="465" alt="Знімок екрана 2026-02-10 193123" src="https://github.com/user-attachments/assets/2dc4e268-4f7e-405d-b8d7-f584452776ed" />
 
-* Вписуємо дані та додаємо запис.
+* Fill in the data and add the record.
 
    <img width="549" height="649" alt="image" src="https://github.com/user-attachments/assets/8007aa85-c6b9-47d5-b165-fd066fa4b78e" />
 
    <img width="879" height="220" alt="image" src="https://github.com/user-attachments/assets/0185fa8f-a2cc-4c03-b5cb-ce9400742228" />
 
-* Щоб змінити дані, потрібно навестись на три точки у правому верхньому кутку запису. Та вибираємо Edit, змінюємо бажані дані.
+* To modify data, hover over the three dots in the top right corner of the record. Select Edit, and change the desired data.
 
    <img width="453" height="211" alt="Знімок екрана 2026-02-10 193717" src="https://github.com/user-attachments/assets/164686be-5b77-489b-8a5c-26fc3865ebbf" />
 
@@ -45,11 +45,11 @@
 
   <img width="436" height="199" alt="image" src="https://github.com/user-attachments/assets/fdc11091-5a14-4fa4-affb-aadf7366c688" />
   
-* Щоб видалити запис, потрібно навестись на три точки у правому верхньому кутку запису та натиснути Delete. Після цього запис видалиться.
+* To delete a record, hover over the three dots in the top right corner of the record and click Delete. The record will then be deleted.
 
    <img width="590" height="281" alt="image" src="https://github.com/user-attachments/assets/779be886-d5c7-40ca-a209-4a736d12798d" />
    
-* У застосунку є можливість пошуку записів за компанією або посадою, а також фільтр запису за статусом.
+* The application includes a feature to search records by company or position, as well as filter records by status.
 
    <img width="1132" height="262" alt="image" src="https://github.com/user-attachments/assets/0be90546-9daf-4bf0-af38-1388dbf739e8" />
 
@@ -57,25 +57,25 @@
 
    <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/ba25427e-8c56-4e28-9b18-b91980b43dd8" />
 
-* Записи у базі даних
+* Records in the database
 
   <img width="811" height="183" alt="image" src="https://github.com/user-attachments/assets/7c97e763-698c-4322-8db4-2ea0da3bc619" />
 
 ---
 
-## 🔮 Плани на майбутнє (Апгрейд до ATS платформи)
+## 🔮 Future Plans (Upgrade to ATS platform)
 
-Наразі я працюю над масштабуванням цього проекту в повноцінну дворольову **систему відстеження кандидатів (ATS)**.
+I am planning on scaling this project into a fully functional dual-role Applicant Tracking System (ATS).
 
-**Заплановані функції:**
+**Planned features:**
 
-* **Рольова модель доступу (RBAC):** Розділення прав та обов'язків між `Admin` (Рекрутер) та `Candidate` (Кандидат).
-* **Портал кандидата:**
-    * Система реєстрації та входу.
-    * Розділ "Доступні вакансії", де користувачі можуть податися на відкриті позиції в один клік.
-    * Особистий дашборд для відстеження статусу власних заявок.
-* **Воркфлоу адміністратора:**
-    * Публікація нових "Відкритих" вакансій.
-    * Перегляд вхідних заявок від зареєстрованих користувачів.
-    * Переміщення кандидатів по пайплайну (Applied -> Interview -> Offer).
-* **Розширення бази даних:** Додавання таблиці `Users` та налаштування зв'язків між Користувачами та Вакансіями.
+* **Role-Based Access Control (RBAC):** Separation of rights and responsibilities between `Admin` (Recruiter) and `Candidate`.
+* **Candidate Portal:**
+    * Registration and login system.
+    * "Available Vacancies" section, where users can apply for open positions in one click.
+    * Personal dashboard to track the status of their own applications.
+* **Administrator Workflow:**
+    * Publishing new "Open" vacancies.
+    * Viewing incoming applications from registered users.
+    * Moving candidates through the pipeline (Applied -> Interview -> Offer).
+* **Database expansion:** Adding a `Users` table and setting up relationships between Users and Vacancies.
