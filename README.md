@@ -9,7 +9,7 @@ Application link: https://jobtrackern8n.lovable.app
 * **Frontend:** React (powered by Lovable.dev), Tailwind CSS, TanStack Query.
 * **Backend:** n8n.
 * **Database:** PostgreSQL.
-* **Архітектура:** Client-server model using REST API via webhooks.
+* **Architecture:** Client-server model using REST API via webhooks.
 
 ## ✨ Key Features
 
